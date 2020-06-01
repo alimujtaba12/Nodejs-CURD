@@ -1,4 +1,5 @@
 module.exports.route = function (app) {
+
   var controllerObj = require("../controllers/app.course.controller");
 
   // Create a new controllerObj
@@ -20,4 +21,5 @@ module.exports.route = function (app) {
   //Delete a controllerObj with Id
 
   app.delete("/api/courses/:id", controllerObj.delete);
+  
 };
